@@ -1,0 +1,454 @@
+// 假轮播
+.lbo{
+    font-family: Ubuntu-B;
+    padding: 0;
+    .slide{
+        .carousel-indicators{
+            margin-left: 0;
+            .active{
+                box-sizing: border-box;
+                background-color: #2190c1;
+                border: 3px solid #f98561;
+            }
+            li{
+                background-color: #adadad;
+                border: 2px solid #adadad;
+            }
+         }
+        .carousel-inner{
+            .item{
+                &>img{
+                    width: 100%;
+                }
+                .carousel-caption{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    p:nth-of-type(1){
+                        font-family: bebas;
+                        font-size: 3em;
+                    }
+                    p:nth-of-type(2){
+                        font-size: 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        div{
+                            width: 200px;
+                            height: 40px;
+                            background-color: #f98561;
+                            line-height: 40px;
+                            border-radius: 5px;
+                            color: #ffebca;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .carousel-indicators{
+                margin-left: -30%;
+                left: 20%;
+             }
+            .carousel-inner{
+                .item{
+                    .carousel-caption{
+                        p:nth-of-type(1){
+                            font-size: 2em;
+                        }
+                        p:nth-of-type(2){
+                            display: none;
+                        }
+                        a{
+                            position: absolute;
+                            bottom: -5%;
+                            div{
+                                width: 100px;
+                                height: 30px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 项目
+.lanmu_w{
+    background-color: #f4f4f4;
+    .lanmu{
+        position: relative;
+        .our{
+            text-transform: uppercase;
+            font-size: 0.5em;
+            background-color: #2190c1;
+            color: #fff;
+            width: 100px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 3px;
+            margin: -10px auto;
+            cursor: pointer;
+        }
+        .deta{
+            margin-top: 4em;
+            margin-bottom: 4em;
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                .design{
+                    display: flex;
+                    width: 15%;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    &>div{
+                        font-family: BreeSerif;
+                        font-size: 1.3em;
+                        display: flex;
+                        flex-direction: column;
+                        p{ 
+                            font-family: Ubuntu-L;
+                            margin-top: 1em;
+                            font-size: 0.5em;
+                        }
+                    }
+                    img{
+                        width: 8em;
+                        margin-bottom: 2em;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            .our{
+                margin: -5px auto;
+            }
+            .deta{
+                ul{
+                    flex-direction: column;
+                    align-items: center;
+                    .design{
+                        margin-top: 1em;
+                        text-align: left;
+                        align-items: center;
+                        flex-direction: row;
+                        width: 80%;
+                        img{
+                            margin-right: 1em;
+                            margin-bottom: 0;
+                            padding: 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 投资组合
+.awesome_a{
+    font-family: BreeSerif;
+    background-color: #2e3e4f;
+    .awesome{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .por{
+            &>span{
+                color: #f98561;
+                font-size: 1.5em;
+            }
+            &>div{
+                background-color: #2e97c5;
+                text-align: center;
+                float: right;
+                width: 90px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 3px;
+                color: #fff;
+            }
+        }
+        .zhaopian{
+            display: flex;
+            justify-content: space-between;
+            .ame{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                .groud{
+                    position: relative;
+                    background-color: #fff;
+                    width: 100%;
+                    padding: 10px;
+                    &:hover>.shang>img{
+                        opacity: 0;
+                    }
+                    &:hover>.shang>a{
+                        opacity: 1;
+                    }
+                    .shang{
+                        background-color: #bebebe;
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        text-align: center;
+                        line-height: 230px;
+                        &>img{
+                            transition: all linear .3s;
+                        }
+                        &>a{
+                            opacity: 0;
+                            text-decoration: none;
+                            position: absolute;
+                            left: 25%;
+                            top: 40%;
+                            color: #fff;
+                            width: 50%;
+                            border: 1px solid #fff;
+                            font-size: 1.5em;
+                            border-radius: 5px;
+                            line-height: 45px;
+                            height: 20%;
+                            transition: all linear .3s;
+                            &>img{
+                                width: 50px;
+                            }
+                        }
+                        
+                    }
+                }
+                .zit{
+                    p{
+                        margin-top: 0.5em;
+                    }
+                    p:nth-of-type(1){
+                        color: #f98561;
+                        font-size: 1.5em;
+                    }
+                    p:nth-of-type(2){
+                        font-family: Ubuntu-L;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            &{
+                height: 1200px;
+                .por{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .zhaopian{
+                    flex-direction: column;
+                    align-items: center;
+                    .ame{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 提供
+.offer_w{
+    font-family: Ubuntu-R;
+    background-color: #f4f4f4;
+    .offer{
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+        height: 400px;
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: column;
+        &>p:nth-of-type(1){
+            font-family: bebas;
+            font-size: 2em;
+            color: #2190c1;
+        }
+        p:nth-of-type(2){
+            width: 70%;
+            margin: 0 auto;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                display: flex;
+                width: 22%;
+                flex-direction: column;
+                align-items: flex-start;
+                span{
+                    font-family: BreeSerif;
+                    color: #2190c1;
+                    font-size: 1.5em;
+                    margin-bottom: 5%;
+                }
+                p{
+                    text-align: left;
+                    margin-bottom: 5%;
+                    a{
+                        font-family: BreeSerif;
+                        font-size: 1.2em;
+                    }
+                }
+                button{
+                    position: relative;
+                    left: 73%;
+                    width: 55px;
+                    height: 25px;
+                    color: #fff;
+                    background-color: #2190c1;
+                    border: 0;
+                    border-radius: 2px;
+                    transition: all 0.2s;
+                    &:hover{
+                        transform: translateY(-5px);
+                        box-shadow: 0px 5px 1px #025568;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        .offer{
+            height: 1000px;
+            p:nth-of-type(2){
+                width: 90%;
+            }
+            ul{
+                height: 700px;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+// 员工介绍
+.test_w {
+    background-color: #f4f4f4;
+    position: relative;
+    .test {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 350px;
+        &>input{
+            display: none;
+        }
+        &>span {
+            font-family: bebas;
+            text-transform: uppercase;
+            color: #2190c1;
+            font-size: 2em;
+        }
+        .wenti {
+            width: 50%;
+            font-family: BreeSerif;
+            font-size: 1.3em;
+            margin: 0 auto;
+            position: relative;
+            height: 7em;
+            p{
+                position: absolute;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+        }
+        #more1:checked~.wenti>p:nth-of-type(1),
+        #more2:checked~.wenti>p:nth-of-type(2),
+        #more3:checked~.wenti>p:nth-of-type(3),
+        #more1:checked~.ceo>p:nth-of-type(1),
+        #more2:checked~.ceo>p:nth-of-type(2),
+        #more3:checked~.ceo>p:nth-of-type(3){
+            opacity: 1;
+        }
+
+        .ceo {
+            position: relative;
+            margin: 0 auto;
+            width:190px;
+            height: 20px;
+            p{
+                position: absolute;
+                color: #f98561;
+                font-family: Ubuntu-L;
+                opacity: 0;
+                transition: all 0.3s;
+                &>span{
+                    font-family: Ubuntu-B;
+                }
+            }
+        }
+        ul {
+            margin-top: 2em;
+            li {
+                display: inline-block;
+                label {
+                    div{
+                        transition: all 0.3s;
+                    }
+                    div:nth-of-type(1){
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #c1c1c1;
+                        margin-bottom: 10px;
+                    }
+                    div:nth-of-type(2) {
+                        margin: 0 auto;
+                        width: 0;
+                        border-bottom: 5px solid #c1c1c1;
+                        border-top: 0px;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                    }
+                    div:nth-of-type(3){
+                        width: 60px;
+                        height: 5px;
+                        background-color: #c1c1c1;
+                    }
+                }
+            }
+        }
+        #more1:checked~ul>li:nth-of-type(1)>label div:nth-of-type(1),
+        #more1:checked~ul>li:nth-of-type(1)>label div:nth-of-type(3),
+        #more2:checked~ul>li:nth-of-type(2)>label div:nth-of-type(1),
+        #more2:checked~ul>li:nth-of-type(2)>label div:nth-of-type(3),
+        #more3:checked~ul>li:nth-of-type(3)>label div:nth-of-type(1),
+        #more3:checked~ul>li:nth-of-type(3)>label div:nth-of-type(3){
+            background-color: #f88560;
+        }
+        #more1:checked~ul>li:nth-of-type(1)>label div:nth-of-type(2),
+        #more2:checked~ul>li:nth-of-type(2)>label div:nth-of-type(2),
+        #more3:checked~ul>li:nth-of-type(3)>label div:nth-of-type(2){
+            border-bottom: 5px solid #f88560;
+        }
+        @media screen and (max-width:768px) {
+            &{
+                height: 500px;
+                .wenti{
+                    height: 200px;
+                    width: 80%;
+                }
+                .ceo{
+                    position: static;
+                    // width: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,274 @@
+// 封面图
+.portf{
+    .slide{
+        .carousel-inner{
+            .item{
+                .carousel-caption{
+                    font-family: bebas;
+                    font-size: 3.5em;
+                    bottom: 1.5em;
+                    @media screen and (max-width:768px){
+                        &{
+                            font-size: 2em;
+                            bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 文字介绍
+.offer_w{
+    font-family: Ubuntu-R;
+    background-color: #f4f4f4;
+    .offer{
+        display: flex;
+        // height: 600px;
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: column;
+        p{
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        &>p:nth-of-type(1){
+            font-family: bebas;
+            font-size: 3em;
+            color: #2190c1;
+        }
+        p:nth-of-type(2){
+            font-family: Ubuntu-B;
+        }
+        p:nth-of-type(4){
+            font-family: bebas;
+            color: #515862;
+            font-size: 5em;
+        }
+        @media screen and (max-width:768px) {
+            &{
+                p{
+                    width: 90%;
+                }
+                P:nth-of-type(2),
+                P:nth-of-type(3){
+                    height: 100px;
+                    overflow: auto;
+                }
+            }
+        }
+    }
+}
+// 应用范围
+.lanmu_w{
+    background-color: #f4f4f4;
+    border-top: 1px solid #d9d9d9;
+    .lanmu{
+        .deta{
+            width: 80%;
+            margin: 0 auto;
+            ul{
+                .design{
+                    border-left: 1px solid #d9d9d9;
+                    display: inline-block;
+                    height: 350px;
+                    padding: 2em;
+                    width: 24%;
+                    text-align: center;
+                    vertical-align: middle;
+                    &:nth-of-type(4){
+                        border-right: 1px solid #d9d9d9;
+                    }
+                    &>div{
+                        font-family: BreeSerif;
+                        font-size: 1.3em;
+                        span{
+                            color: #2190c1;
+                        }
+                        p{ 
+                            font-family: Ubuntu-L;
+                            margin-top: 1em;
+                            font-size: 0.5em;
+                        }
+                    }
+                    img{
+                        margin-bottom: 2em;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:1200px) {
+            &{
+                .deta{
+                    ul{
+                        .design{
+                            height: 480px;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            &{
+                .our{
+                    margin: -5px auto;
+                }
+                .deta{
+                    ul{
+                        width: 100%;
+                        .design{
+                            padding: 0;
+                            padding-bottom: 1em;
+                            width: 100%;
+                            border-bottom: 1px solid #d9d9d9;
+                            border-left: none;
+                            height: auto;
+                            margin-top: 1em;
+                            text-align: center;
+                            img{
+                                margin-right: 1em;
+                                margin-bottom: 0;
+                                padding: 0.5em;
+                            }
+                            &:nth-of-type(4){
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// 人物介绍
+.team_w{
+    background-color: #f4f4f4;
+    border-top: 5px solid #a5a5a5;
+    .team{
+        text-align: center;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &>p{
+            font-family: bebas;
+            font-size: 3em;
+            color: #2190c1;
+        }
+        .lorem{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 1000px;
+            .doe{
+                background-color: #fff;
+                width: 40%;
+                height: 40%;
+                border: 1px solid #d3d3d3;
+                padding: 1em;
+                font-family: Ubuntu-L;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: -10px -10px 0px #d3d3d3;
+                .top{
+                    display: flex;
+                    height: 45%;
+                    .Head_Por{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        width: 30%;
+                        height: 100%;
+                        background-color: #b5b5b5;
+                    }
+                    .direc{
+                        margin-left: 3em;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        span:nth-of-type(1){
+                            font-family: BreeSerif;
+                        }
+                        span:nth-of-type(2){
+                            font-family: bebas;
+                            font-size: 2em;
+                            color: #2190c1;
+                        }
+                        ul{
+                            display: flex;
+                            justify-content: space-around;
+                            li{
+                                width: 1.5em;
+                                height: 1.5em;
+                                border-radius: 4px;
+                                display: inline-block;
+                            }
+                            li:nth-of-type(1){
+                                background-color: #00a1e4;
+                            }
+                            li:nth-of-type(2){
+                                background-color: #29aecb;
+                            }
+                            li:nth-of-type(3){
+                                background-color: #0481d9;
+                            }
+                            li:nth-of-type(4){
+                                background-color: #f7941d;
+                            }
+                        }
+                    }
+                }
+                &>p{
+                    height: 45%;
+                    text-align: left;
+                }
+            }
+            .doe:nth-of-type(2),
+            .doe:nth-of-type(4){
+                box-shadow: 10px -10px 0px #d3d3d3;
+            }
+        }
+    }
+    @media screen and (max-width:992px) {
+        &{
+            .team{
+                .lorem{
+                    .doe{
+                        height: 47%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        &{
+            .team{
+                .lorem{
+                    flex-direction: column;
+                    align-items: center;
+                    .doe{
+                        justify-content: space-evenly;
+                        width: 80%;
+                        height: 23%;
+                        &>p{
+                            display: none;
+                        }
+                        .top{
+                            height: auto;
+                            flex-direction: column;
+                            align-items: center;
+                            .direc{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
