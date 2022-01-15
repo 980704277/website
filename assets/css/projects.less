@@ -1,0 +1,381 @@
+// 封面图
+.portf{
+    .slide{
+        .carousel-inner{
+            .item{
+                .carousel-caption{
+                    font-family: bebas;
+                    font-size: 3.5em;
+                    bottom: 1.5em;
+                    @media screen and (max-width:768px){
+                        &{
+                            font-size: 2em;
+                            bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 文字介绍
+.offer_w{
+    .offer{
+        text-align: center;
+        p{
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: bebas;
+            font-size: 4em;
+            color: #2190c1;
+        }
+
+        @media screen and (max-width:768px) {
+            &{
+                p{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+// 员工介绍
+.test_w {
+    position: relative;
+    .test {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 350px;
+        &>input{
+            display: none;
+        }
+        &>span {
+            font-family: bebas;
+            text-transform: uppercase;
+            color: #2190c1;
+            font-size: 2em;
+        }
+        .wenti {
+            width: 50%;
+            font-family: BreeSerif;
+            font-size: 1.3em;
+            margin: 0 auto;
+            position: relative;
+            height: 7em;
+            p{
+                position: absolute;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+        }
+        #more1:checked~.wenti>p:nth-of-type(1),
+        #more2:checked~.wenti>p:nth-of-type(2),
+        #more3:checked~.wenti>p:nth-of-type(3),
+        #more1:checked~.ceo>p:nth-of-type(1),
+        #more2:checked~.ceo>p:nth-of-type(2),
+        #more3:checked~.ceo>p:nth-of-type(3){
+            opacity: 1;
+        }
+
+        .ceo {
+            position: relative;
+            margin: 0 auto;
+            width:190px;
+            height: 20px;
+            p{
+                position: absolute;
+                color: #f98561;
+                font-family: Ubuntu-L;
+                opacity: 0;
+                transition: all 0.3s;
+                &>span{
+                    font-family: Ubuntu-B;
+                }
+            }
+        }
+        ul {
+            margin-top: 2em;
+            li {
+                display: inline-block;
+                label {
+                    div{
+                        transition: all 0.3s;
+                    }
+                    div:nth-of-type(1){
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #c1c1c1;
+                        margin-bottom: 10px;
+                    }
+                    div:nth-of-type(2) {
+                        margin: 0 auto;
+                        width: 0;
+                        border-bottom: 5px solid #c1c1c1;
+                        border-top: 0px;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                    }
+                    div:nth-of-type(3){
+                        width: 60px;
+                        height: 5px;
+                        background-color: #c1c1c1;
+                    }
+                }
+            }
+        }
+        #more1:checked~ul>li:nth-of-type(1)>label div:nth-of-type(1),
+        #more1:checked~ul>li:nth-of-type(1)>label div:nth-of-type(3),
+        #more2:checked~ul>li:nth-of-type(2)>label div:nth-of-type(1),
+        #more2:checked~ul>li:nth-of-type(2)>label div:nth-of-type(3),
+        #more3:checked~ul>li:nth-of-type(3)>label div:nth-of-type(1),
+        #more3:checked~ul>li:nth-of-type(3)>label div:nth-of-type(3){
+            background-color: #f88560;
+        }
+        #more1:checked~ul>li:nth-of-type(1)>label div:nth-of-type(2),
+        #more2:checked~ul>li:nth-of-type(2)>label div:nth-of-type(2),
+        #more3:checked~ul>li:nth-of-type(3)>label div:nth-of-type(2){
+            border-bottom: 5px solid #f88560;
+        }
+        @media screen and (max-width:768px) {
+            &{
+                height: 500px;
+                .wenti{
+                    height: 200px;
+                    width: 80%;
+                }
+                .ceo{
+                    position: static;
+                    // width: 50%;
+                }
+            }
+        }
+    }
+}
+// 选择栏
+.all_w{
+    border-top: 1px solid #2190c1;
+    border-bottom: 1px solid #2190c1;
+    .all_web{
+        border-left: 1px solid #2190c1;
+        border-right: 1px solid #2190c1;
+        font-family: bebas;
+        &>ul{
+            text-transform: uppercase;
+            width: 90%;
+            margin: 0 auto;
+            &>li{ 
+                cursor: pointer;
+                display: inline-block;
+                border-left: 1px solid #aaa;
+                margin: 1em;
+                padding-left: 1em;
+                padding-right: 1.5em;
+                color: #515862;
+                &:hover{
+                    color: #2190c1;
+                }
+                .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+                    background-color: #2190c1;
+                }
+                &:nth-of-type(6){
+                    margin: 0;
+                    height: 55px;
+                    input[name="lorem"]:checked~span{
+                        background-color: #2190c1;
+                    }
+                    input{
+                        display: none;
+                    }
+                    &>div{
+                        height: 100%;
+                        &>button{
+                            background-color: #2190c1;
+                            height: 100%;
+                            width: 160px;
+                            border: none;
+                            border-radius: 0;
+                            color: #fff;
+                            &>:hover{
+                                background-color: #2190c1;
+                            }
+                        }
+                        &>ul{
+                            background-color: #f98561;
+                            border-radius: 0;
+                            margin-top: 0;
+                            li{
+                                text-align: center;
+                                width: 80%;
+                                display: flex;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #aaa;
+                                align-items: center;
+                                margin: 0 auto;
+                                color: #fff;
+                                &>span{
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                    background-color: #aaa;
+                                }
+                                &>label{
+                                    padding-left: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-of-type(7){
+                    color: #aaaaaa;
+                    span{
+                        cursor: pointer;
+                        font-size: 1.5em;
+                        margin-left: 0.5em;
+                        &:nth-of-type(2){
+                            top: -1px;
+                        }
+                        &:hover{
+                            color: #2190c1;
+                        }
+                    }
+                }
+
+                &:nth-of-type(1),
+                &:nth-of-type(6),
+                &:nth-of-type(7){
+                    border-left: none;
+                }
+                
+            }
+        }
+    }
+}
+// 电视墙
+.awesome_a{
+    font-family: BreeSerif;
+    .awesome{
+        height: 920px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .zhaopian{
+            height: 90%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .ame{
+                width: 30%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                .groud{
+                    position: relative;
+                    background-color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    &:hover>.shang>img{
+                        opacity: 0;
+                    }
+                    &:hover>.shang>.cang{
+                        opacity: 1;
+                    }
+                    .shang{
+                        display: flex;
+                        background-color: #bebebe;
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        text-align: center;   
+                        align-items: center;
+                        justify-content: center;
+                        &>img{
+                            transition: all linear .3s;
+                        }
+                        .cang{
+                            opacity: 0;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            color: #fff;
+                            height: 100%;
+                            width: 90%;
+                            transition: all 0.3s linear;
+                            &>p:nth-of-type(1){
+                                font-size: 1.5em;
+                            }
+                            &>a{
+                                width: 50%;
+                                border: 1px solid #fff;
+                                text-decoration: none;
+                                color: #fff;
+                                &>img{
+                                    width: 50px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            &{
+                height: 1200px;
+                .zhaopian{
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    align-items: center;
+                    .ame{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 我们的客户
+.clien_w{
+    border-top: 1px solid #2190c1;
+    border-bottom: 1px solid #2190c1;
+    height: 150px;
+    .clients{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        p{
+            font-family: bebas;
+                font-size: 2em;
+                color: #2190c1;
+        }
+        &>div{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width:768px) {
+        &{
+            height: 300px;
+            .clients{
+                &>div{
+                    height: 230px;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
