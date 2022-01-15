@@ -1,0 +1,208 @@
+// 封面图
+.portf{
+    .slide{
+        .carousel-inner{
+            .item{
+                .carousel-caption{
+                    font-family: bebas;
+                    font-size: 3.5em;
+                    bottom: 1.5em;
+                    @media screen and (max-width:768px){
+                        &{
+                            font-size: 2em;
+                            bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 文字介绍
+.offer_w{
+    font-family: Ubuntu-L;
+    background-color: #f4f4f4;
+    .offer{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: column;
+        p{
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        &>p:nth-of-type(1){
+            font-family: bebas;
+            font-size: 3em;
+            color: #2190c1;
+        }
+
+        @media screen and (max-width:768px) {
+            &{
+                p{
+                    width: 90%;
+                    overflow: auto;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+// 表单
+.kurma_w{
+    background-color: #f4f4f4;
+    .kurma{
+        font-family: Ubuntu-R;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 700px;
+        .left{
+            width: 50%;
+            border-right: 1px solid #e1e1e1;
+            display: flex;
+            height: 100%;
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                p{
+                    sup{
+                        color: red;
+                    }
+                }
+                input{
+                    width: 80%;
+                    height: 30px;
+                    border: 1px solid #dcdee0;
+                }
+                input:focus{
+                    border-color: #ffd2d2;
+                }
+                textarea{
+                    width: 80%;
+                    border: 1px solid #dcdee0;
+                    height: 270px;
+                    resize: none;
+                }
+                textarea:focus{
+                    border-color: #ffd2d2;
+                }
+                input[type="submit"]{
+                    background-color: #2190c1;
+                    color: #fff;
+                    width: 120px;
+                    height: 30px;
+                    border-radius: 3px;
+                    float: right;
+                }
+                div:nth-of-type(5){
+                    width: 80%;
+                }
+            }
+        }
+        .right{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            .ipsum{
+                width: 100%;
+                ul{
+                    li{
+                        width: 50%;
+                        padding-left: 4em;
+                        background-position-y: 5px;
+                        margin-top: 1em;
+                    }
+                    li:nth-of-type(1){
+                        margin: 0;
+                        background-image: url(../images/gourd_2.png);
+                        background-repeat: no-repeat;
+
+                    }
+                    li:nth-of-type(2){
+                        background-image: url(../images/home_2.png);
+                        background-repeat: no-repeat;
+                    }
+                    li:nth-of-type(3){
+                        background-image: url(../images/email_2.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .follow{
+                &>p{
+                    font-family: bebas;
+                    font-size: 2em;
+                }
+                .fenx{
+                    a{
+                        margin: 0.25em;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:999px) {
+            &{
+                height: 800px;
+                .right{
+                    width: 45%;
+                    .ipsum{
+                        ul{
+                            li{
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            &{
+                height: 85em;
+                flex-direction: column;
+                .left{
+                    border: none;
+                    width: 90%;
+                    form{
+                        &>div{
+                            width: 100%;
+                            &>input{
+                                width: 100%;
+                            }
+                            textarea{
+                                height: 200px;
+                                width: 100%;
+                            }
+                            &:nth-of-type(5){
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .right{
+                    width: 90%;
+                    align-items: center;
+                    .ipsum{
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            li{
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
