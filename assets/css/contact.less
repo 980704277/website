@@ -116,7 +116,7 @@
                 width: 100%;
                 ul{
                     li{
-                        width: 50%;
+                        width: 250px;
                         padding-left: 4em;
                         background: 10px;
                         margin-top: 1em;
@@ -145,6 +145,12 @@
                 .fenx{
                     a{
                         margin: 0.25em;
+                        &>:hover{
+                            transform: scale(1.2);
+                        }
+                        img{
+                            transition: all .3s linear;
+                        }
                     }
                 }
             }
